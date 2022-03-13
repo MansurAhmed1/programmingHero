@@ -1,0 +1,24 @@
+.navbar-nav li a{
+color: white;
+font-size: 13px;
+font-weight: 700;
+background-color: tomato;
+}
+.mouse{
+font-size: 16px;
+  width: 80vw;
+    background-color: violet;
+  right: -530px;
+
+}
+.mouse{ display: none;}
+
+.effect:hover .mouse{
+  display: block;
+} 
+.cat{
+
+display: grid;
+grid-template-columns: auto auto auto ;
+
+}

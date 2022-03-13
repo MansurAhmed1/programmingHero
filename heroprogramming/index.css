@@ -1,0 +1,70 @@
+
+
+
+.boom{
+    
+    border-bottom: 5px solid white;
+ 
+    }
+  
+
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+      
+      .sective, .accordion:hover {
+        background-color: #ccc;
+      }
+      
+      .accordion::before {
+        content: '\002B';
+        font-size: 28px;
+        color: #eee;
+        font-weight: bold;
+        margin-top: 5px;
+   
+        margin-right: 10px;
+      }
+      
+      .sective::before {
+        content: "\2212";
+        font-size: 20px;
+        font-weight: bold;
+      }
+      
+      .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+
+      .extra1{
+        transform: skewY(-10deg);
+       
+      }
+      .extra2{
+        transform: skewY(10deg);
+      
+      }
+
+      @media only screen and (max-width: 900px) {
+        .extra1{
+          transform: skewY(0deg);
+          
+        }
+        .extra2{
+          transform: skewY(0deg);
+          
+        }
+      }
